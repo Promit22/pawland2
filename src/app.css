@@ -1,0 +1,21 @@
+:root {
+	--bg-color: #c3a995;
+	--txt-color: #e7d7c1;
+	--header-color: #ffe8d6;
+	--btn-color: #593d3b;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-color);
+	color: var(--txt-color);
+}
+h3 {
+	color: var(--header-color);
+}
+
+* {
+	box-sizing: border-box;
+}
