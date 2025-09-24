@@ -54,7 +54,8 @@
 
 		.cat {
 			flex: 1 1 200px;
-			max-width: 300px;
+			width: 300px;
+			height: 400px;
 			display: flex;
 			flex-direction: column;
 			border-radius: 0.5rem;
@@ -64,7 +65,7 @@
 
 			img {
 				width: 100%;
-				height: auto;
+				height: 70%;
 				object-fit: cover;
 				border-radius: 0.5rem;
 			}
@@ -72,7 +73,7 @@
 			p {
 				text-align: center;
 				font-weight: 600;
-				letter-spacing: 2px;
+				/* letter-spacing: 2px; */
 				font-size: 1.5rem;
 			}
 		}

@@ -45,4 +45,5 @@ export type Cat = {
 		metric: string;
 	};
 	wikipedia_url?: string;
+	[key: string]: string | number | undefined | { [key: string]: string | number } | { id: string; width: number; height: number; url: string };
 };
