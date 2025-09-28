@@ -14,7 +14,7 @@ export type Cat = {
 	hairless?: number;
 	health_issues?: number;
 	hypoallergenic?: number;
-	id?: string;
+	id: string;
 	image?: {
 		id: string;
 		width: number;
@@ -25,7 +25,7 @@ export type Cat = {
 	intelligence?: number;
 	lap?: number;
 	life_span?: string;
-	name?: string;
+	name: string;
 	natural?: number;
 	origin?: string;
 	rare?: number;

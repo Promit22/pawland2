@@ -27,7 +27,7 @@
 </script>
 
 <div id="container">
-	<a href="/gallery">Back to Gallery</a>
+	<a href="/gallery/">Back to Gallery</a>
 	{#if cat}
 		<div id="catDetails">
 			<h1>{cat.name}</h1>
