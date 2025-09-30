@@ -7,7 +7,6 @@
 
 <h1>Pawllery</h1>
 <p id="note">(click cats for details)</p>
-<a href="/">Home page</a>
 
 {#if $cats}
 	<div id="catContainer">
@@ -25,7 +24,7 @@
 <style>
 	h1 {
 		text-align: center;
-		margin: 1rem 0;
+		margin: 3rem 0;
 		font-size: 3.5rem;
 		font-weight: 900;
 	}
@@ -40,6 +39,7 @@
 	#catContainer {
 		display: flex;
 		flex-wrap: wrap;
+		/* margin-top: 5rem; */
 		justify-content: center;
 		gap: 1rem;
 		max-width: 90%;

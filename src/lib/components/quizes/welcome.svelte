@@ -1,7 +1,5 @@
 <script lang="ts">
     	import { selectedLevel, data } from '$lib/stores/quizStore';
-		import {test} from '$lib/helpers/quizHelper';
-		import {incrementStep} from '$lib/helpers/step.svelte';
 </script>
 
 <div id="welcome">
@@ -28,7 +26,7 @@
 			checking out <a href="/gallery/">our Gallery</a> if you haven't already.
 		</p>
 	</div>
-	<button class="start-btn" onclick={() => {test($selectedLevel); incrementStep()}}>Start Quiz</button>
+	
 </div>
 
 <style>
@@ -85,17 +83,5 @@
 		a:hover {
 			color: tomato;
 		}
-	}
-
-	.start-btn {
-		padding: 1rem 3rem;
-		margin: 2rem;
-		font-size: 1.2rem;
-		background-color: #4caf50;
-		color: white;
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-		transition: all 0.3s ease;
 	}
 </style>

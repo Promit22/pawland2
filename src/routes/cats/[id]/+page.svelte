@@ -2,28 +2,30 @@
 	import type { PageProps } from './$types';
 	// import type { Cat } from '$lib/types/catTypes';
 	import unavailable from '$lib/assets/images/unavailable.png';
+	import { getKeys } from '$lib/helpers/keys';
+	import { formatKey } from '$lib/helpers/keyFormatter';
 
 	let { data }: PageProps = $props();
 	let { cat } = data; //  as {cat: Cat};
 	console.log(cat);
-	const excludedKeys = [
-		'alt_names',
-		'country_codes',
-		'id',
-		'image',
-		'reference_image_id',
-		'vetstreet_url',
-		'weight',
-		'wikipedia_url',
-		'vcahospitals_url',
-		'cfa_url',
-		'description'
-	];
-	const keys = Object.keys(cat || {}).filter((key) => !excludedKeys.includes(key));
+	// const excludedKeys = [
+	// 	'alt_names',
+	// 	'country_codes',
+	// 	'id',
+	// 	'image',
+	// 	'reference_image_id',
+	// 	'vetstreet_url',
+	// 	'weight',
+	// 	'wikipedia_url',
+	// 	'vcahospitals_url',
+	// 	'cfa_url',
+	// 	'description'
+	// ];
+	// const keys = Object.keys(cat || {}).filter((key) => !excludedKeys.includes(key));
+
+	const keys = getKeys(cat!);
 	console.log(keys);
-	function formatKey(key: string): string {
-		return key.replace(/_/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
-	}
+	
 </script>
 
 <div id="container">

@@ -4,7 +4,7 @@ export type Cat = {
 	alt_names?: string;
 	cfa_url?: string;
 	child_friendly?: number;
-	country_code?: string;
+	country_code: string;
 	country_codes?: string;
 	description?: string;
 	dog_friendly?: number;
@@ -27,7 +27,7 @@ export type Cat = {
 	life_span?: string;
 	name: string;
 	natural?: number;
-	origin?: string;
+	origin: string;
 	rare?: number;
 	reference_image_id?: string;
 	rex?: number;
@@ -36,7 +36,7 @@ export type Cat = {
 	social_needs?: number;
 	stranger_friendly?: number;
 	suppressed_tail?: number;
-	temperament?: string;
+	temperament: string;
 	vcahospitals_url?: string;
 	vetstreet_url?: string;
 	vocalisation?: number;
@@ -47,3 +47,9 @@ export type Cat = {
 	wikipedia_url?: string;
 	[key: string]: string | number | undefined | { [key: string]: string | number } | { id: string; width: number; height: number; url: string };
 };
+
+
+export type Data = {
+	correct: Cat;
+	wrong: Cat[];
+}
