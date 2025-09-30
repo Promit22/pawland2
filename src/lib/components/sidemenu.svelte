@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { sideMenuOpen } from '$lib/stores/bars';
 	import { fly } from 'svelte/transition';
+	import { base } from '$app/paths';
 </script>
 
 {#if $sideMenuOpen}
@@ -13,9 +14,9 @@
 	></div>
 	<div class="menu" transition:fly={{ x: -300, duration: 300 }}>
 		<h2>Menu</h2>
-		<a href="/">Home</a>
-		<a href="/gallery/">Gallery</a>
-		<a href="/quiz/">Quiz</a>
+		<a href="{base}/">Home</a>
+		<a href="{base}/gallery/">Gallery</a>
+		<a href="{base}/quiz/">Quiz</a>
 	</div>
 {/if}
 

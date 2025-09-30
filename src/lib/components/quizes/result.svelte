@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ans } from '$lib/helpers/validator';
+	import {base} from '$app/paths'
 	console.log('in validar', ans);
 </script>
 
@@ -16,7 +17,7 @@
 			<p>You selected: <strong>{a.userSelect}</strong></p>
 		</div>
 	{/each}
-    <a href="/gallery/">Back to gallery</a>
+    <a href="{base}/gallery/">Back to gallery</a>
 </div>
 
 <style>
