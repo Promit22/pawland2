@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { cats } from '$lib/stores/cats';
 	import unavailable from '$lib/assets/images/unavailable.png';
+	import { base } from '$app/paths';
 	// console.log($cats);
 	// console.log($cats.map(cat => ({cat.id})));
 </script>
@@ -11,7 +12,7 @@
 {#if $cats}
 	<div id="catContainer">
 		{#each $cats as cat}
-			<a href="/cats/{cat.id}/">
+			<a href="/cats/{cat.id}">
 				<div class="cat">
 					<img src={cat.image?.url ?? unavailable} alt={cat.name} />
 					<p>{cat.name}</p>
