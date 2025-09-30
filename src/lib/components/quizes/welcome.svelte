@@ -1,5 +1,6 @@
 <script lang="ts">
     	import { selectedLevel, data } from '$lib/stores/quizStore';
+		import {base} from '$app/paths'
 </script>
 
 <div id="welcome">
@@ -23,7 +24,7 @@
 	<div id="note">
 		<p>
 			<strong>Note: </strong> Questions will be based on the cats available in pawland. We recommend
-			checking out <a href="gallery/">our Gallery</a> if you haven't already.
+			checking out <a href="{base}/gallery/">our Gallery</a> if you haven't already.
 		</p>
 	</div>
 	

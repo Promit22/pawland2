@@ -12,7 +12,7 @@
 {#if $cats}
 	<div id="catContainer">
 		{#each $cats as cat}
-			<a href="/cats/{cat.id}">
+			<a href="{base}/cats/{cat.id}">
 				<div class="cat">
 					<img src={cat.image?.url ?? unavailable} alt={cat.name} />
 					<p>{cat.name}</p>

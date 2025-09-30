@@ -2,48 +2,41 @@
 	import hero from '$lib/assets/images/hero.jpg';
 	import gallery from '$lib/assets/images/gallery.png';
 	import quiz from '$lib/assets/images/quiz.png';
+	import { base } from '$app/paths';
 </script>
 
+<section class="hero" style="background-image: url({hero});">
+	<div class="overlay">
+		<h1>Welcome to Pawland</h1>
+		<p>Discover your perfect pet!</p>
+		<!-- <button>Get Started</button> -->
+		<a href="{base}/gallery/">Get Started</a>
+	</div>
+</section>
 
-	<section class="hero" style="background-image: url({hero});">
+<div id="container">
+	<section class="hero" style="background-image: url({gallery});">
 		<div class="overlay">
-			<h1>Welcome to Pawland</h1>
-			<p>Discover your perfect pet!</p>
+			<h1>Discover Cats</h1>
 			<!-- <button>Get Started</button> -->
-			<a href="gallery/">Get Started</a>
+			<a href="{base}/gallery/">Discover Now</a>
 		</div>
 	</section>
-
-	<div id="container">
-		<section class="hero" style="background-image: url({gallery});">
-			<div class="overlay">
-				<h1>Discover Cats</h1>
-				<!-- <button>Get Started</button> -->
-				<a href="gallery/">Discover Now</a>
-			</div>
-		</section>
-		<section class="hero" style="background-image: url({quiz});">
-			<div class="overlay">
-				<h1>Test your knowledge</h1>
-				<!-- <button>Get Started</button> -->
-				<a href="quiz/">Test Now</a>
-			</div>
-		</section>
-	</div>
+	<section class="hero" style="background-image: url({quiz});">
+		<div class="overlay">
+			<h1>Test your knowledge</h1>
+			<!-- <button>Get Started</button> -->
+			<a href="{base}/quiz/">Test Now</a>
+		</div>
+	</section>
+</div>
 
 <style>
-	/* main {
-		max-width: 1000px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	} */
 	.hero {
 		position: relative;
 		width: 100%;
-		height: 80vh; /* Adjust height */
-		/* background-image: url({hero}); Replace with your image */
-		background-size: cover; /* Makes image cover the section */
+		height: 80vh;
+		background-size: cover;
 		background-position: center;
 		display: flex;
 		justify-content: center;
@@ -53,7 +46,7 @@
 
 	.overlay {
 		text-align: center;
-		background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+		background-color: rgba(0, 0, 0, 0.5);
 		padding: 2rem;
 		border-radius: 1rem;
 	}
@@ -75,7 +68,7 @@
 	}
 
 	#container {
-        max-width: 1000px;
+		max-width: 1000px;
 		margin: 15rem auto;
 
 		section {
