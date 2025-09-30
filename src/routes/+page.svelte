@@ -10,7 +10,7 @@
 			<h1>Welcome to Pawland</h1>
 			<p>Discover your perfect pet!</p>
 			<!-- <button>Get Started</button> -->
-			<a href="/gallery/">Get Started</a>
+			<a href="gallery/">Get Started</a>
 		</div>
 	</section>
 
@@ -19,14 +19,14 @@
 			<div class="overlay">
 				<h1>Discover Cats</h1>
 				<!-- <button>Get Started</button> -->
-				<a href="/gallery/">Discover Now</a>
+				<a href="gallery/">Discover Now</a>
 			</div>
 		</section>
 		<section class="hero" style="background-image: url({quiz});">
 			<div class="overlay">
 				<h1>Test your knowledge</h1>
 				<!-- <button>Get Started</button> -->
-				<a href="/gallery/">Test Now</a>
+				<a href="quiz/">Test Now</a>
 			</div>
 		</section>
 	</div>
